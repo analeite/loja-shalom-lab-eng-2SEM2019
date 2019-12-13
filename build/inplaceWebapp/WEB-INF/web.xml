@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+  version="3.1"
+  metadata-complete="true">
+
+    <description> compraevendasinosaki </description>    
+    <display-name>Sistema WEB de Compra e Venda</display-name>
+    
+    <servlet>
+        <servlet-name>PaginaInicial</servlet-name>
+        <servlet-class>controller.PaginaInicial</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>PaginaInicial</servlet-name>
+        <url-pattern></url-pattern>
+    </servlet-mapping>  
+    
+    <servlet>
+        <servlet-name>Compra</servlet-name>
+        <servlet-class>controller.Compra</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Compra</servlet-name>
+        <url-pattern>/Compra.action</url-pattern>
+    </servlet-mapping> 
+    
+    <servlet>
+        <servlet-name>Estoque</servlet-name>
+        <servlet-class>controller.Estoque</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Estoque</servlet-name>
+        <url-pattern>/Estoque.action</url-pattern>
+    </servlet-mapping> 
+    
+    
+    <servlet>
+        <servlet-name>GerenciaProduto</servlet-name>
+        <servlet-class>controller.GerenciaProduto</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>GerenciaProduto</servlet-name>
+        <url-pattern>/GerenciaProduto.action</url-pattern>
+    </servlet-mapping>     
+    
+    <servlet>
+        <servlet-name>ConsultaEstoque</servlet-name>
+        <servlet-class>controller.ConsultaEstoque</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ConsultaEstoque</servlet-name>
+        <url-pattern>/ConsultaEstoque.action</url-pattern>
+    </servlet-mapping> 
+    
+     <servlet>
+        <servlet-name>NovoProduto</servlet-name>
+        <servlet-class>controller.NovoProduto</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>NovoProduto</servlet-name>
+        <url-pattern>/NovoProduto.action</url-pattern>
+    </servlet-mapping>  
+    
+    <servlet>
+        <servlet-name>InserirProduto</servlet-name>
+        <servlet-class>controller.InserirProduto</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>InserirProduto</servlet-name>
+        <url-pattern>/InserirProduto.action</url-pattern>
+    </servlet-mapping>  
+    
+     <servlet>
+        <servlet-name>EditarProduto</servlet-name>
+        <servlet-class>controller.EditarProduto</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>EditarProduto</servlet-name>
+        <url-pattern>/EditarProduto.action</url-pattern>
+    </servlet-mapping>     
+    
+    <servlet>
+        <servlet-name>AlterarProduto</servlet-name>
+        <servlet-class>controller.AlterarProduto</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>AlterarProduto</servlet-name>
+        <url-pattern>/AlterarProduto.action</url-pattern>
+    </servlet-mapping>    
+    
+    <servlet>
+        <servlet-name>ExcluirProduto</servlet-name>
+        <servlet-class>controller.ExcluirProduto</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ExcluirProduto</servlet-name>
+        <url-pattern>/ExcluirProduto.action</url-pattern>
+    </servlet-mapping>      
+    
+</web-app>
